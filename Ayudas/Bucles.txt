@@ -1,0 +1,7 @@
+For I in Range ( 1{número de inicio}, n+1{número final})
+If n%I {mod: número que divide los números de los rangos} == 0 {que den cero}
+
+While: cuando no se sabe cuántas veces se va a repetir, pero si la condición para que deje de repetirse 
+N= número
+U : n // 10
+N : N // 10
