@@ -1,0 +1,96 @@
+
+				Modulo 3 Igualdades Bucles y listas
+
+
+Igualdad ==
+
+Al momento de hacer una pregunta de comparacion en un programa de python siempre tendra como resultado dos diferentes respuestas, (No, False), (Si, True). Esto se hace con el signo {==, Igual Igual}, esto lo que hace es comparar los dos valores puestos. 
+
+Desigualdad !=
+
+Este se puede considerar el opuesto de Igualdad, debido a que si los dos valores son iguales, este respondera (No, False) ya que no son desiguales, mientras que si los numeros estan desiguales este respondera con (Si, True).
+
+Mayor que > Menor que <
+
+Este operador es cuando entre dos numeros el que esta ubicado al inicio es mayor al que se registro despues, si esta caracteristica se cumple mostrara (Si, True), mientras que si esto no se cumple mostrara (No, False)
+
+Mayor o Igual >= Menor o Igual<=
+
+Este operador se usa cuando en un ejercicio cuando se determina si un numero es mayor o igual a otro numer y viceversa. Si se llega a mostrar un numero que cumpla con estos requisitos por ejemplo (5 >= 6, 5<= 5) este mostrara un mensaje (Si, True), Y si no se cumple mostrara el mensaje (No, False)
+
+Condiciones
+
+Las condiciones son representadas con el operador "if" de manera que en terminos simples dice (Si esta condicion se cumple haz esto)
+
+Como funciona if?
+
+if A == 3
+ Print ("El numero que representa A es 3")
+
+Aqui se muestra con condicionales que si el numero "A" es 3, muestre el mensaje en print
+
+Else-if 
+
+Este es otro tipo de condicional que muestra si el if no se cumple, se cumple esto otro
+
+Ejemplo 
+If A == 3
+ Print("A es igual a 3")
+
+Elif #Asi se abrevia
+ print("A no es igual a 3")
+
+Else 
+
+Muestra que si algo mas pasa y esto que pasa no esta programado o no esta previsto, haga algo mas
+
+------------------------------------------------
+
+BUCLES
+
+While
+
+El bucle while se puede conocer tambien como bucle "Mientras", es un bucle "Infinito" entre comillas porque dice ("Mientras esta condicion se cumpla sigue haciendo el ciclo o bucle"), Ejemplo
+While A != 3
+ Print(""A" No es igual a 3")
+
+Donde mientras A no sea igual a 3 siempre mostrara el mismo mensaje hasta que A sea 3
+
+For
+
+El bucle For es el que muestra el numero de veces que se va a hacer un bucle, normalmente este se puede mostrar en numeros con la funcion range; Por ejemplo
+
+For I in range(1, 100) #En un rango de 1 hasta 100 
+
+Si el codigo de range hubiera sido (10, 50) mostraria la lista de numeros desde 10 hasta 50
+
+Aunque For tambien puede aceptar 3 argumentos 
+
+El tercer argumento es el que muestra el numero de saltos que dara para hacer la cuenta en el bucle
+
+Por ejemplo 
+For I in range(2, 50, 2)
+ Print(I)
+
+El codigo mostrara una lista de numeros de 2 en 2 hasta 50
+
+Break y Continue
+
+El break y continue se puede definir como una pausa en el codigo donde el bucle deja de seguir la linea de codigo hasta donde dice break, y sigue donde dice continue
+
+------------------------------------------------------------------------------
+
+Listas
+
+Una lista se puede considerar una base de almacenamiento de distintas variables, donde se le asigna un numero de cada una de las posiciones de la lista
+
+Por ejemplo
+
+Numeros = (1, 3, 5)
+ Print(Numeros[0])
+
+Lo que hara el codigo es mostrar el primero de los numeros, ya que python ha adoptado la manera de que el primer numero siempre es catalogado como 0, y donde el segundo numero es 1, el tercero es 2, ETC.
+
+Len 
+
+El operador len muestra la longitud de la lista que hay		

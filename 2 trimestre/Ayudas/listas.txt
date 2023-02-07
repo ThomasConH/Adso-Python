@@ -1,0 +1,112 @@
+Listas python
+
+Las listas son variables que almacenan distintos numeros de objetos, estas estan identificadas con los simbolos []
+
+Ejemplo: 
+
+A = [1, 2, 3]
+
+#El nombre de la lista es "A" y en la lista esta el 1, 2, 3
+
+Estos estan ordenados de manera que el 0 ocupa el primer puesto, el segundo el 1, el tercero el 2. ETC
+
+- Para determinar el tamaño de la lista se necesita la funcion "len" donde mostrara el numero de objetos de la lista
+
+- Para agregar un numero o objeto de una lista se usa la funcion append de la siguiente manera "Lista.append(x)"
+
+- Para agregar mas objetos o numeros a una lista pruralmente se utiliza la funcion extend "Lista.extend([x])", donde entre los corchetes se escriben los numeros; Para escribir dos o mas numeros se utiliza la funcion range 
+"Lista.extend([range(x, x2+1)])"
+#En este ejemplo se añadiran los numeros desde x hasta x2 (Hay que tener en cuenta que al ser una lista tomara todos los objetos menos el ultimo por lo que hay que añadirle un numero)
+
+- Para contar las repeticiones de distintos numeros se utilizara la funcion "Lista.count(x)", donde x sera el numero que se estara buscando que se repita en la lista
+
+- Para añadir un nuevo objeto en la lista en una posicion determinada, se utilizara la funcion "Lista.insert(i, x)"; En la "i" se escribira la posicion donde se quiere ser ubicado el objeto y en la "x" se escribira el objeto que se querra aladir
+
+- Para remover algun elemento se utilizara la funcion "Lista.remove(x)" donde como el nombre lo indica, eliminara el objeto deseado de la list (#Esto solo aplicara escribiendo el objeto en cuestion#)
+
+- Para remover un objeto por la posicion se debera utilizar la funcion "Lista.pop(x)"; Si en la x no se escribe nada removera el ultimo objeto de la lista, para eliminar una posicion especifica se debera especificar la posicion del objeto en cuestion
+
+- Para conocer la posicion de un objeto en la lista se debera utilizar la funcion "Lista.index(x)" donde en x se debera escribir el objeto en cuestion para determinar la posicion del mismo
+
+- Para invertir cambiar el orden de la lista y que esta este a la inversa se debera utilizar la funcion "Lista.reverse()"
+
+- Para acomodar los objetos de menor a mayor se debera utilizar la funcion "Lista.sort()"
+
+- Para acomodarlos de mayor a menor se debera usar la funcion "Lista.sort(reverse=true)"
+
+- Para acceder al ultimo objeto de la lista "print(lista[-1])"; Teniendo en cuenta esto el -2 es el penultimo etc.
+
+- Para imprimir determinados objetos de la lista "print(Lista[0:2])"; Esto mostrara solo los tres primeros dos primeros numeros numeros, ya que solo contara el numero anterior al final
+
+- Para combinar dos listas solo es necesario sumarlas "Lista3 = Lista1 + Lista2" al momento de imprimir la lista tres mostrara los objetos combinados de ambas listas
+
+- Para comprobar si hay un valor en la lista se usa la funcion "in" por ejemplo:
+
+Lista = 1 2 3 4 5 6
+ Si escribimos "print(3 in Lista)" mostrara el resultado True ya que el numero 3 si esta en la lista, si ponemos un valor que no esta en la lista mostrara el valor False
+
+- Para que los objetos de la lista se muestren dos veces se debera poner la lista por 2 "Lista * 2" mostrara los valores de la lista dos veces
+
+
+----------------------------------------------------------
+
+Suma de elementos de una lista
+
+Se define la lista, ejemplo
+
+Lista = 1 2 3 4 5
+
+def sumar (lista)
+	suma = 0
+	for elemento in lista:
+		suma += elemento
+	return suma
+print(sumar(lista))
+
+#Primero se define la funcion sumar, donde se muestra que sera unicamente en la lista, luego se define que la variable suma es 0.
+#Utilizamos el for para que recorra todos los elementos de la lista, y utilizamos la funcion para que agrege los elementos de la suma en la variable, que con el += los sumara
+#Return funcionara para que muestre que "suma" es el resultado de la suma, luego imprimira la funcion definida de sumar y los elementos de la lista
+
+-------------------------------------------------------
+
+Lista con objetos random
+
+Primero se debera definir donde se generara la lista de numeros random, definiendola como si fuera una lista normal pero los corchetes estan vacios
+
+ListaRandom = []
+
+luego se define el numero de objetos de la lista con la funcion "len"
+
+Se utiliza "Rango = random.randint(1,25)" con este codigo se generara una lista que puede llegar a ser 1 o mas numeros hasta 25
+
+Luego con la funcion for se mostrara la lista utilizando el codigo 
+
+"vector.append(round(random.random()*100))"
+
+como final solo hay que pedir que se imprima el vector "print("vector")
+
+
+
+Para sumar los elementos de esa lista y hacer el promedio deberemos crear una nueva variable que se llamara "suma" que tendra un valor inicial de 0 es decir "suma = 0", tambien otro que se llame contador que tambien tenga un valor de cero, es decir, "contador = 0"
+
+se hara el codigo
+
+"suma += vector[i]"
+
+Esto hara que haga un repaso de los elementos de la lista y los sume, para sacar el promedio solo se debera hacer que el contador se sume 1 vez por cada elemento, con el siguiente codigo, 
+
+"contador += 1" en la misma sangria
+
+luego se hara la variable "promedio" donde se defina como "suma / contador" dando resultado el promedio
+
+El codigo total seria:
+
+""vector = []
+
+rango = random.randint(1,25)
+
+for i in range(rango):
+    vector.append(round(random.random()*100))
+    cont += 1
+    suma += vector[i]
+    promedio  = suma / cont""
