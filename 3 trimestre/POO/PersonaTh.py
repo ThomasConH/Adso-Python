@@ -1,38 +1,39 @@
 class Persona:
-    def __init__(self,nombre,id):
-        self.__nombre=nombre,id
+    def __init__(self,nombre,cc):
+        self.__nombre= nombre
+        self.__cc = cc
         #print('Constructor Activado')        
 
     def getNombre(self):
         return self.__nombre
     
-    def GetId(self):
-        return self.__id
+    def Getcc(self):
+        return self.__cc
 
-    def setNombre(self,nombre):
-        self.__nombre=nombre
+    def setPersona(self,nombre,cc):
+        self.__nombre= nombre
+        self.__cc = cc
     
-    def SetId(self,id):
-        self.___id = id
+#    def Setcc(self,cc):
+#        self.___cc = cc
 
 ob=Persona('Maria',123456)
-print(ob.getNombre())
-print(ob.GetId())
-ob.setNombre('Ana',152432)
-print(ob.getNombre())
-print(ob.SetId())
+print("El nombbre de la persona es:",ob.getNombre())
+print("El numero de identidad de la persona es:",ob.Getcc())
+ob.setPersona('Ana',152432)
+print("El nombre cambiado de la persona es:",ob.getNombre())
+print("El numerdo de identidad cambiado de la persona es:",ob.Getcc())
 #print(type(ob))
 
 """class Aprendiz(Persona):
     def __init__(self,nombre,ficha):
-        Persona.__init__(self,nombre)
+        Persona.__init__(self,nombre,ficha)
         self.__ficha=ficha
-
+    
     def getFicha(self):
         return self.__ficha
 
 
 app=Aprendiz('Pedro',12345)
-print(app.getFicha())
-print(app.getNombre())
-print(app.getFicha())"""
+print("el nombre del pelao es:",app.getNombre())
+print("La ficha del pelao es:",app.getFicha())"""
