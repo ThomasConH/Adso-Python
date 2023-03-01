@@ -1,26 +1,27 @@
 class Persona:
-    def __init__(self,nombre,id):
-        self.__nombre=nombre,id
+    def __init__(self,nombre,cc):
+        self.__nombre= nombre
+        self.__cc = cc
         #print('Constructor Activado')        
 
     def getNombre(self):
-        return self.__nombre
+        return self.__nombre, self.__cc
     
-    def GetId(self):
-        return self.__id
+#    def Getcc(self):
+#        return self.__cc
 
-    def setNombre(self,nombre):
+    def setPersona(self,nombre,cc):
         self.__nombre=nombre
+        self.__cc = cc
     
-    def SetId(self,id):
-        self.___id = id
+#    def Setcc(self,cc):
+#        self.___cc = cc
 
 ob=Persona('Maria',123456)
 print(ob.getNombre())
-print(ob.GetId())
-ob.setNombre('Ana',152432)
+#print(ob.Getcc())
+ob.setPersona("Ana",192732)
 print(ob.getNombre())
-print(ob.SetId())
 #print(type(ob))
 
 """class Aprendiz(Persona):
