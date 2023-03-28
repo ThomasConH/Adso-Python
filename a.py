@@ -1,9 +1,20 @@
-def hola():
-    a = 1
-    b = 2
-    if a + b == 3:
-        print("yo")
-    elif a - b != -1:
-        print("sexo")
+class ExampleClass:
+    def __init__(self, val = 1):
+        self.first = val
 
-hola()
+    def set_second(self, val):
+        self.second = val
+
+
+example_object_1 = ExampleClass()
+example_object_2 = ExampleClass(2)
+
+example_object_2.set_second(3)
+
+example_object_3 = ExampleClass(4)
+example_object_3.third = 5
+
+print(example_object_1.__dict__)
+print(example_object_2.__dict__)
+print(example_object_3.__dict__)
+
